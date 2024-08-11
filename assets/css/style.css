@@ -1,0 +1,166 @@
+:root {
+    --primary: #4cb5f9;
+    --secondary: #385185;
+    --gray: #fafafa;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 16px;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left {
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.left img {
+    height: 581.15px;
+}
+
+.left img:last-child {
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+    height: 510px;
+}
+
+.right {
+    text-align: center;
+    flex-basis: 350px;
+}
+
+.right > div:not(:last-child) {
+    border: 1px solid rgb(223, 223, 223);
+    padding: 1.5rem;
+    margin: 0.75rem auto;
+    border-radius: 0.35rem;
+}
+
+.logo {
+    margin-bottom: 2.5rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.inputs input {
+    border: 1px solid rgb(223, 223, 223);
+    background-color: var(--gray);
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.35rem;
+}
+
+.inputs button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.75rem;
+    font-weight: bold;
+    margin-top: 0.75rem;
+}
+
+.or {
+    margin-block: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.85rem;
+    padding-inline: 0.25rem;
+}
+
+.or span:not(#or) {
+    height: 1px;
+    flex-grow: 1;
+    background-color: rgb(219, 219, 219);
+}
+
+#or {
+    display: inline-block;
+    color: #777573;
+    font-size: 13px;
+}
+
+.or_action {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+}
+
+.or_action a {
+    color: var(--secondary);
+}
+
+.or_action a i {
+    font-size: 20px;
+}
+
+.facebook {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.facebook:hover {
+    text-decoration: underline;
+}
+
+.forgot {
+    font-size: 12px;
+    font-weight: 200;
+    transition: all 0.5s;
+}
+
+.forgot:hover {
+    color: red;
+}
+
+.right > div:nth-child(2) {
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+    padding: 1.25rem;
+}
+
+.right > div:nth-child(2) p {
+    display: inline;
+}
+
+.right > div:nth-child(2) a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.right > div:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+.right > div:last-child {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+    margin-top: 1rem;
+}
